@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <h1>Work Experience</h1>
+                <p><a href="index.html">Back to Home</a></p>
+            </ul>
+        </nav>
+        
+        
+    </header>
+    <main>
+        <section id="experience">
+            <h2>My Work Experience</h2>
+
+            <!-- Mellow Vans Experience -->
+            <div class="experience-card">
+                <button class="toggle-btn">Handmade Digital clock <span>+</span></button>
+                <div class="experience-content">
+                    <p><strong>Project:</strong> Digital clock </p>
+                    <p><strong>type:</strong> Electronics and CAD design project</p>
+                    <p><strong>Built:</strong> January 2025</p>
+                    <p>I used an Arduino uno to build a digital clock. I first started by drawing some rough designs, where I labled where I wanted everything to be placed. I then hopped onto OnShape where I 3D modeled my design taking elements from the two designs and making one. I then generated an Engineering drawing and set up the orthographic views for measurements. I printed it out and used them as a template, where I transferred them to cardboard and cut them out. I then worked on the electronics. I first planned out the code on a sheet of paper and then excecuted my code. I built my circuit using jumper cables, an Arduino uno and an LCD screen.</p>
+                    
+                    <!-- Videos Section -->
+                    <!-- <div class="video-grid">
+                        <div class="video-card">
+                            <video controls>
+                                <source src="MellowVans1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Testing the motor controller on an electric vehicle prototype.</p>
+                        </div>
+                        <div class="video-card">
+                            <video controls>
+                                <source src="MellowVans2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>This is a device we installed to display the battery's power whilst it is being charged and while it is being used.</p>
+                        </div>
+                    </div> -->
+
+                    <!-- Pictures Section -->
+                    <div class="image-grid">
+                        <div class="image-card">
+                            <img src="Clock1.jpg" alt="Electric Van Prototype">
+                            <p>This is how the inside of the clock looked with all the elctronics and speaker</p>
+                        </div>
+                        <div class="image-card">
+                            <img src="Clock2.jpg" alt="Battery Pack Analysis">
+                            <p>This is how the outside of the clock looked before paint. </p>
+                        </div>
+                        <div class="image-card">
+                            <img src="Clock3.jpeg" alt="Front part of a Mellow Van">
+                            <p>This is the second hand drawn design. I wanted to try a more retro 80's style.</p>
+                        </div>
+                        <div class="image-card">
+                            <img src="Clock4.jpeg" alt="Battery Pack Analysis">
+                            <p>This is the first hand drawn design. I wanted a 70's retro style</p>
+                        </div>
+                        <div class="image-card">
+                            <img src="Clock5.jpeg" alt="Battery Pack Analysis">
+                            <p>This is the first coat of paint fir the outer body of the alarm clock</p>
+                        </div>
+                        <div class="image-card">
+                            <img src="Clock6.png" alt="Front part of a Mellow Van">
+                            <p>This is the assembled 3D model that was designed in OnShape.</p>
+                        </div>
+                        <div class="image-card">
+                            <img src="Clock7.jpg" alt="Battery Pack Analysis">
+                            <p>This is the engineering drawing that I generated. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- <div class="experience-card">
+                <button class="toggle-btn">RC Car<span>+</span></button>
+                <div class="experience-content">
+                    <p><strong>Project:</strong> Remote Controlled Car </p>
+                    <p><strong>type:</strong> Electronics project</p>
+                    <p><strong>Built:</strong>December 2024</p>
+                    <p>I made an RC car with an arduino and two DC motors. The AIM of this project was too learn about RC, gears and differentails </p>
+                    
+                    Videos Section 
+                   <div class="video-grid">
+                        <div class="video-card">
+                            <video controls>
+                                <source src="MellowVans1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Testing the motor controller on an electric vehicle prototype.</p>
+                        </div>
+                        <div class="video-card">
+                            <video controls>
+                                <source src="MellowVans2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>This is a device we installed to display the battery's power whilst it is being charged and while it is being used.</p>
+                        </div>
+                    </div> 
+
+                     Pictures Section 
+                    <div class="image-grid">
+                        <div class="image-card">
+                            <img src="Clock1.jpg" alt="Electric Van Prototype">
+                            <p>This is how the inside of the clock looked with all the elctronics and speaker</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div> -->
+            
+            <!-- Future Work Experience Can Be Added Here -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Jordan Prince. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle Work Experience Details
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                let content = this.nextElementSibling;
+                content.classList.toggle('active');
+                let span = this.querySelector('span');
+                span.textContent = content.classList.contains('active') ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
+
