@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Work Experience</h1>
+        <p><a href="index.html">Back to Home</a></p>
+    </header>
+    <main>
+        <section id="experience">
+            <h2>My Work Experience</h2>
+
+            <!-- Mellow Vans Experience -->
+            <div class="experience-card">
+                <button class="toggle-btn">Mellow Vans (Vacation Work) <span>+</span></button>
+                <div class="experience-content">
+                    <p><strong>Company:</strong> Mellow Vans</p>
+                    <p><strong>Role:</strong> Electronics Engineer Intern</p>
+                    <p><strong>Duration:</strong> December 2024</p>
+                    <p>During my time at Mellow Vans, I worked on electric vehicle control systems, diagnosing electrical circuits, and improving battery efficiency.</p>
+                    
+                    <!-- Videos Section -->
+                    <div class="video-grid">
+                        <div class="video-card">
+                            <video controls>
+                                <source src="MellowVans1.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>Testing the motor controller on an electric vehicle prototype.</p>
+                        </div>
+                        <div class="video-card">
+                            <video controls>
+                                <source src="MellowVans2.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <p>This is a device we installed to display the battery's power whilst it is being charged and while it is being used.</p>
+                        </div>
+                    </div>
+
+                    <!-- Pictures Section -->
+                    <div class="image-grid">
+                        <div class="image-card">
+                            <img src="mellow1.jpg" alt="Electric Van Prototype">
+                            <p>This is one of the electric vans I worked on.</p>
+                        </div>
+                        <div class="image-card">
+                            <img src="mellow2.jpg" alt="Battery Pack Analysis">
+                            <p>My work station at MellowVans, where I tested the brakes of the vehicles before they were put into the vehicles.</p>
+                        </div>
+                        <div class="image-card">
+                            <img src="mellow3.jpg" alt="Front part of a Mellow Van">
+                            <p>This is the steering section of one of the prototype vehicles. I was responsible for installing the all electrical and electronic hardware and making sure it was all functional, this also includes all wiring and components.</p>
+                        </div>
+                        <div class="image-card">
+                            <img src="mellow4.jpg" alt="Battery Pack Analysis">
+                            <p>This is the electric motor that I helped install and set up. I ran tests on the motor using my CAN software. I used CANKing, which is an industry software, that was introduced to me at MellowVans</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Future Work Experience Can Be Added Here -->
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Jordan Prince. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Toggle Work Experience Details
+        document.querySelectorAll('.toggle-btn').forEach(button => {
+            button.addEventListener('click', function () {
+                let content = this.nextElementSibling;
+                content.classList.toggle('active');
+                let span = this.querySelector('span');
+                span.textContent = content.classList.contains('active') ? '-' : '+';
+            });
+        });
+    </script>
+</body>
+</html>
+
