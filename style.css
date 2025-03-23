@@ -78,6 +78,79 @@ section h2 {
     padding-bottom: 5px;
 }
 
+/* Work Experience */
+.experience-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px;
+}
+
+.toggle-btn {
+    width: 100%;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-btn span {
+    font-size: 22px;
+}
+
+.experience-content {
+    display: none;
+    padding: 15px;
+    margin-top: 10px;
+    background: #f8f9fa;
+    border-radius: 5px;
+}
+
+.experience-content.active {
+    display: block;
+}
+
+/* Videos & Images */
+.video-grid, .image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.video-card, .image-card {
+    width: 300px;
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-card p, .video-card p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
 /* About Section */
 .about-content {
     max-width: 600px;
